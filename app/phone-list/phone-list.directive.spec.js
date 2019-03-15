@@ -9,12 +9,12 @@ describe('phoneList', function() {
   describe('PhoneListController', function() {
     var $httpBackend, ctrl;
 
-    beforeEach(inject(function($componentController, _$httpBackend_) {
+    beforeEach(inject(function($controller, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('phones/phones.json')
                   .respond([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
 
-      ctrl = $componentController('phoneList');
+      ctrl = $controller('phoneListCtrlr');
     }));
 
     it('should create a `phones` property with 2 phones fetched with `$http`', function() {
