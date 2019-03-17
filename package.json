@@ -6,6 +6,9 @@
   "repository": "https://github.com/angular/angular-phonecat",
   "license": "MIT",
   "dependencies": {
+    "@types/angular": "^1.6.54",
+    "@types/angular-mocks": "^1.7.0",
+    "@types/jasmine": "^3.3.10",
     "angular": "1.7.x",
     "angular-animate": "1.7.x",
     "angular-resource": "1.7.x",
